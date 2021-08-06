@@ -30,11 +30,13 @@ keytool-importkeypair -k ~/.android/debug.keystore -p android -pk8 platform.pk8 
 h3. jks For Android Studio
 
 Generate platform.jks
+
 <pre>
 ./keytool-importkeypair -k platform.jks -p android -pk8 platform.pk8 -cert platform.x509.pem -alias platform
 </pre>
 
 Config build.gradle in app.
+
 <pre>
 signingConfigs {
   debug {
